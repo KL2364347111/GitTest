@@ -1,12 +1,8 @@
-#include<stdio.h>
-int GCD(int a, int b){
-    return (b==0)?(a):GCD(b,a%b);
-}
+#include<iostream>
+#include<cstdio>
+using namespace std;
 int main(){
-	int x,y;
-	while(scanf("%d %d",&x,&y)!=EOF){
-		if(x==0&&y==0)	return 0;
-		else
-			printf("%d\n",x*y/GCD(x,y));
-	}
+	int a,b;
+	while(scanf("%d%d",&a,&b)==2&&(a||b)) 
+		printf("%d\n",a*b/__gcd(a,b));
 }
