@@ -4,7 +4,7 @@ int main(){
     while(scanf("%d",&x)==1){
         count=0;
         if(x<0) 
-		  	x=(~x);
+	    x=(~x);
         while(x){
             if(x&1) count++;
             x=x>>1;
